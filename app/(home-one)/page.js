@@ -123,10 +123,9 @@ export default function HomeOne() {
 			<Services services={servicesData} />
 			<AutoSlider />
 			<PricingPlan />
-			<BrandLogo />
 			<ContactForm />
 			<OurParthner/>
-			
+			<BrandLogo />
 			<Testimonialss/>
 			{/* <div style={{backgroundColor:'black',margin:"0,20px,0,30px"}}>
 			<img src="https://dev.hostcurator.com/wp-content/themes/Hostcurator/theme_assets/images/BottomLogo.png"/>
