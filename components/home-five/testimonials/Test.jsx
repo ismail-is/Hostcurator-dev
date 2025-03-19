@@ -2,7 +2,13 @@ import Image from "next/image";
 
 function Test({ testimonial: { author, designation, title, description, img, color, star } }) {
 	return (
-		<div className="aximo-testimonial-slider-column" style={{ backgroundColor: color, padding: '70px', borderRadius: '29px' }}>
+		<div  className="aximo-testimonial-slider-column"
+		style={{
+		  backgroundColor: color,
+		  padding: window.innerWidth >= 640 ? "72px" : "40px", // Adjust padding based on screen size
+		  borderRadius: "29px",
+		  fontSize: window.innerWidth >= 640 ? "16px" : "14px",
+		}}>
 			<div className="aximo-testimonial-slider-data" style={{ marginBottom: '20px' }}>
 				<h3 
 					style={{ 
