@@ -3,10 +3,13 @@
 }
 .mobile-navbar {
 	position: fixed;
-	top: 0;
+	margin: 50px;
+	top: 20%;
 	left: 0;
-	background-color: #fff;
+	background-color: black;
+	border-radius: 24px;
 	width: 320px;
+	height: 430px;
 	z-index: 9999;
 	border: 1px solid #ddd;
 }
@@ -21,6 +24,8 @@
 	top: 50%;
 	right: 0;
 	transform: translateY(-50%);
+	background-color: #7947DD;
+	
 }
 .mobile-nav-wrap .mobile-menu-trigger span {
 	display: block;
@@ -67,11 +72,11 @@
 .mobile-menu-head--close {
 	height: 100%;
 	width: 50px;
-	border-left: 1px solid rgba(0, 0, 0, 0.1);
+	border-left: 1px solid rgba(255, 255, 255, 0.1);
 	cursor: pointer;
 	line-height: 50px;
 	text-align: center;
-	color: #000000;
+	color: white;
 	font-size: 28px;
 	font-weight: 600;
 }
@@ -80,6 +85,7 @@
 	font-size: 18px;
 	text-transform: uppercase;
 	font-weight: 700;
+	color: white;
 }
 .mobile-navbar > ul {
 	overflow-y: auto;
@@ -98,28 +104,35 @@
 	background-color: transparent;
 	border: none;
 	width: 100%;
-	text-align: left;
+	text-align: center;
 	cursor: pointer;
 	padding: 0;
 	position: relative;
 }
 .mobile-navbar ul li a,
 .mobile-navbar ul li button {
-	font-family: sans-serif;
-	color: #000;
-	display: block;
-	font-size: 16px;
-	font-weight: 600;
-	line-height: 50px;
-	height: 50px;
-	text-decoration: none;
-	padding: 0 20px;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+    color: #ffffff;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    /* line-height: 50px; */
+    height: 50px;
+    text-decoration: none;
+    padding: 10px 80px 10px 80px; /* Adjusted for better spacing */
+    border: 2px solid white; /* Changed bottom border to full border */
+    border-radius: 25px; /* Increased for better rounding */
+    text-align: center;
+    margin: 10px auto; /* Center alignment */
+    width: fit-content; /* Adapts width to content */
+	margin-bottom: 10px;
 }
+
 .mobile-navbar ul li button i {
 	position: absolute;
 	top: 20px;
 	right: 25px;
+	
 }
 
 .sub-menu.level-1 a,
