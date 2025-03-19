@@ -6,7 +6,7 @@ import QuoteImg from "../../../public/images/v4/quote.png";
 
 function TestimonialsCard() {
   return (
-    <div style={{ backgroundColor: "black", padding: "20px" }}>
+    <div style={{ backgroundColor: "black", padding: "20px",marginTop:'-100px' }}>
       {/* Logo Section */}
       <div style={{ backgroundColor: "black", display: "flex", justifyContent: "center" }}>
         <img

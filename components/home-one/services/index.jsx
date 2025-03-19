@@ -5,6 +5,7 @@ import ServiceCard from "./ServiceCard";
 
 function Services({ services }) {
 	return (
+		<div id='service'>
 		<div className="section aximo-section-padding4" style={{backgroundColor:'black'}} id='cards'>
 			<div className="container">
 				{/* <div className="aximo-section-title center">
@@ -29,6 +30,7 @@ function Services({ services }) {
 </div>
 
 			</div>
+		</div>
 		</div>
 	);
 }

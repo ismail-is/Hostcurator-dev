@@ -63,7 +63,7 @@ function Testimonialss1() {
 			<div className="container">
 				<div className="row align-items-center">
 					{/* Left Side - Image */}
-					<div className="col-md-6 text-center" style={{height:'100%'}}>
+					<div className="col-md-6 text-center" >
 						<div className="aximo-testimonial-slider-thumb">
 							<img
 								src={testimonialsData[activeIndex].img}

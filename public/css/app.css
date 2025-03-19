@@ -5034,7 +5034,7 @@ p.aximo-skillbar-lable {
   /* Larger screens (1024px and above) */
   @media screen and (min-width: 1024px) {
 	#cards {
-	  margin-top: -200px !important; 
+	  margin-top: -250px !important; 
 	}
   }
   
@@ -10424,5 +10424,40 @@ button#aximo-notified-btn {
     }
 }
 
+
+
+
+
+@media (min-width: 640px) {
+	#clientlogo {
+	  margin-top: -130px;
+	}
+  }
+  
+  /* Laptops and larger screens (1024px and up) */
+  @media (min-width: 1024px) {
+	#clientlogo {
+	  margin-top: -130px;  /* Adjust if needed */
+	}
+  }
+
+
+
+
+
+
+
+  @media (min-width: 640px) {
+	#mainslider {
+	  margin-top: -230px !important;
+	}
+  }
+  
+  /* Laptops and larger screens (1024px and up) */
+  @media (min-width: 1024px) {
+	#mainslider {
+	  margin-top: -130px;  /* Adjust if needed */
+	}
+  }
 /*1.4 themes css*/
 /*# sourceMappingURL=app.css.map */

@@ -44,9 +44,9 @@ const swiperSettings = {
 
 function Testimonialss() {
 	return (
-		<div className="section aximo-section-padding2" style={{backgroundColor:'black',marginTop:'-10px'}}>
+		<div className="section aximo-section-padding2" style={{backgroundColor:'black'}}>
 			<div className="container">
-				<div className="row align-items-center" >
+				<div className="row align-items-center"  id='mainslider'>
 					{/* Left Side - Image */}
 					
 

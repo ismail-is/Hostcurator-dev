@@ -15,7 +15,7 @@ function ContactForm() {
 		console.log("Submite Form Data = ", formData);
 	};
 	return (
-		<div className="section aximo-section-padding" style={{backgroundColor:'black',marginTop:'-30px'}}>
+		<div className="section aximo-section-padding" style={{backgroundColor:'black',marginTop:'-30px'}} id='Hire'>
 			<div className="container">
 			<div className="aximo-pricing-title col-lg-12" style={{marginTop:'-60px',backgroundColor:'#7947DD',padding:'25px',borderTopLeftRadius:'30px',borderTopRightRadius:'30px'}}>
 					<h2 style={{fontSize:'34px',color:'white'}}>
