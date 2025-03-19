@@ -153,3 +153,11 @@
 		display: block;
 	}
 }
+
+
+@media (max-width: 768px) {
+    #btn {
+      display: flex;
+      justify-content: center;
+    }
+  }

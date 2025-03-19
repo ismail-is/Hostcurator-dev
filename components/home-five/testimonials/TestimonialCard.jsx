@@ -9,7 +9,7 @@ function TestimonialCard({ testimonial: { author, designation, title, descriptio
 			<h6 style={{color:'white'}}>Based on 42 reviews</h6>
 			<div className="flex justify-between items-center w-full" style={{display:'flex',justifyContent:'space-between'}}>
   <img
-    src="https://cdn.trustindex.io/assets/platform/Google/logo-dark.svg"
+    src="images/allimg/logo-dark.svg"
     style={{
       maxWidth: "120px",
       maxHeight: "28px"
@@ -60,7 +60,7 @@ function TestimonialCard({ testimonial: { author, designation, title, descriptio
 				<h6 style={{color:'white',fontFamily:'sans-serif'}}>{description}</h6>
 				<div className="aximo-testimonial-slider-wrap"  style={{marginTop:'10px'}}>
 				<div className="aximo-testimonial-slider-thumb" style={{display:'flex',gap:"20px"}}> 
-					<img	src="https://lh3.googleusercontent.com/a-/ALV-UjWA7PUVWx3qFFpsQDmlp0TGz8nQLhzZZGL6KniIXEhej8OxJhIP=w80-h80-c-rp-mo-ba4-br100" style={{height:'15%',width:"15%"}}/>
+					<img	src="images/allimg/unnamed.png" style={{height:'15%',width:"15%"}}/>
 					<h6 style={{color:'white'}}>K P <br/><span style={{fontSize:'14px'}}>2024-04-22</span></h6>
 					
 				</div>

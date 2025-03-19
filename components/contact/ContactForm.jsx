@@ -38,154 +38,146 @@ function ContactForm() {
 
 
 				<div className="container">
-				<div className="row" style={{backgroundColor:'#7947DD',marginTop:'-42px',borderBottomLeftRadius:'30px',borderBottomRightRadius:'30px'}}>
-					<div className="col-lg-6 order-lg-2">
-					<h4 style={{textAlign:'center',margin:'10px',color:'white'}}>Let’s talk about project</h4>
-					<div className="aximo-main-form" style={{border:'none'}}>
-    <form onSubmit={handleSubmit(submitForm)}>
+				<div
+  className="row"
+  style={{
+    backgroundColor: "#7947DD",
+    marginTop: "-42px",
+    borderBottomLeftRadius: "30px",
+    borderBottomRightRadius: "30px",
+  }}
+>
+  {/* Left Column with Vertical Border on Larger Screens */}
+  <div
+    className="col-lg-6 order-lg-2"
+    style={{
+      borderLeft: "2px solid black",
+      paddingLeft: "20px",
+    }}
+  >
+    <h4 style={{ textAlign: "center", margin: "10px", color: "white" }}>
+      Let’s talk about project
+    </h4>
+    <div className="aximo-main-form" style={{ border: "none" }}>
+      <form onSubmit={handleSubmit(submitForm)}>
         <div style={{ display: "flex", gap: "20px" }}>
-            <div style={{ flex: 1 }}>
-                <Field label="Name" error={errors.name}>
-                    <input
-                        {...register("name", { required: "Name is required." })}
-                        type="text"
-                        name="name"
-                        id="name"
-						placeholder="|"
-                    />
-                </Field>
-            </div>
-            <div style={{ flex: 1 }}>
-                <Field label="Email " error={errors.email}>
-                    <input
-                        {...register("email", { required: "Email is required." })}
-                        type="email"
-                        name="email"
-                        id="email"
-							placeholder="|"
-                    />
-                </Field>
-            </div>
+          <div style={{ flex: 1 }}>
+            <Field label="Name" error={errors.name}>
+              <input
+                {...register("name", { required: "Name is required." })}
+                type="text"
+                name="name"
+                id="name"
+                placeholder="|"
+              />
+            </Field>
+          </div>
+          <div style={{ flex: 1 }}>
+            <Field label="Email " error={errors.email}>
+              <input
+                {...register("email", { required: "Email is required." })}
+                type="email"
+                name="email"
+                id="email"
+                placeholder="|"
+              />
+            </Field>
+          </div>
         </div>
         <div style={{ display: "flex", gap: "20px", marginTop: "15px" }}>
-            <div style={{ flex: 1 }}>
-                <Field label="Phone " error={errors.phone}>
-                    <input
-                        {...register("phone", { required: "Phone is required." })}
-                        type="text"
-                        name="phone"
-                        id="phone"
-							placeholder="|"
-                    />
-                </Field>
-            </div>
-            <div style={{ flex: 1 }}>
-                <Field label="Select a service">
-                    <input type="text" name="subject" id="subject" placeholder="Select" />
-                </Field>
-            </div>
+          <div style={{ flex: 1 }}>
+            <Field label="Phone " error={errors.phone}>
+              <input
+                {...register("phone", { required: "Phone is required." })}
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="|"
+              />
+            </Field>
+          </div>
+          <div style={{ flex: 1 }}>
+            <Field label="Select a service">
+              <input type="text" name="subject" id="subject" placeholder="Select" />
+            </Field>
+          </div>
         </div>
         <div style={{ display: "flex", gap: "20px", marginTop: "15px" }}>
-            <div style={{ flex: 1 }}>
-                <Field label="Budget " error={errors.phone}>
-                    <input
-                        {...register("phone", { required: "Phone is required." })}
-                        type="text"
-                        name="phone"
-                        id="phone"
-							placeholder="$"
-                    />
-                </Field>
-            </div>
-            <div style={{ flex: 1 }}>
-                <Field label="How soon you want to start?" >
-                    <input type="text" name="subject" id="subject" placeholder="|" />
-                </Field>
-            </div>
+          <div style={{ flex: 1 }}>
+            <Field label="Budget " error={errors.phone}>
+              <input
+                {...register("phone", { required: "Phone is required." })}
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="$"
+              />
+            </Field>
+          </div>
+          <div style={{ flex: 1 }}>
+            <Field label="When start?">
+              <input type="text" name="subject" id="subject" placeholder="|" />
+            </Field>
+          </div>
         </div>
-        {/* <div style={{ marginTop: "15px" }}>
-            <label>Write your message here...</label>
-            <textarea name="textarea" style={{ width: "100%", height: "100px" }}></textarea>
-        </div> */}
-       <h2 style={{fontSize:'24px'}}>
-					 
-					<span style={{color:'black	',
-    backgroundColor:'#FDB920',
-    border: '2px solid #000000 ',
-    borderRadius:' 269px',
-    padding:' 12px',
-	textTransform:'uppercase',
-	marginLeft:'10px'}} > SUBMIT</span></h2>
-    </form>
-</div>
-
-					</div>
-
-
-
-					<div className="col-lg-6">
-						<h4 style={{textAlign:'center',margin:'10px',color:'white'}}>We love listen to your requirements</h4>
-						<div className="aximo-main-form" style={{backgroundColor:'#FFDDDD'}}>
-							<div style={{display:'flex'}}><img src='https://dev.hostcurator.com/wp-content/themes/Hostcurator/theme_assets/images/avatar-img.png' style={{border:'3px solid black',borderRadius:'50%',height:'100px',width:'100px'}}/>
-							<h6 style={{margin:'10px 0 0 10px'}}>Nisamudeen Plackal</h6>
-							</div>
-							<div
-      className="d-flex justify-content-between align-items-center flex-column flex-md-row"
-      style={{ marginTop: "6px" }}
-    >
-      {["Call us", "Skype us", "Mail us"].map((text, index) => (
-        <div
-          key={index}
-          className="stats"
-          style={{ border: "2px solid black", borderRadius: "27px", margin: "5px" }}
-        >
-          <button className="btn contact-form-contact-button">{text}</button>
-        </div>
-      ))}
+        <h2 style={{ fontSize: "24px" }} id="btn">
+          <span
+            style={{
+              color: "black",
+              backgroundColor: "#FDB920",
+              border: "2px solid #000000",
+              borderRadius: "269px",
+              padding: "5px 30px 5px 30px",
+              textTransform: "uppercase",
+              marginLeft: "10px",
+            }}
+          >
+            SUBMIT
+          </span>
+        </h2>
+      </form>
     </div>
+  </div>
 
-										
-							{/* <form onSubmit={handleSubmit(submitForm)}>
-								<div className="aximo-main-field">
-									<Field label="Your Name" error={errors.name}>
-										<input
-											{...register("name", { required: "Name is required." })}
-											type="name"
-											name="name"
-											id="name"
-										/>
-									</Field>
-								</div>
-								<div className="aximo-main-field">
-									<Field label="Enter email address" error={errors.email}>
-										<input
-											{...register("email", { required: "Email is required." })}
-											type="email"
-											name="email"
-											id="email"
-										/>
-									</Field>
-								</div>
-								<div className="aximo-main-field">
-									<Field label="Enter Phone Number" error={errors.phone}>
-										<input
-											{...register("phone", { required: "Phone is required." })}
-											type="phone"
-											name="phone"
-											id="phone"
-										/>
-									</Field>
-								</div>
-								<div className="aximo-main-field">
-									<label>Write your message here...</label>
-									<textarea name="textarea"></textarea>
-								</div>
-								<button id="aximo-main-btn" type="submit">
-									Send Message
-								</button>
-							</form> */}
-						</div>
-						<div class="row justify-content-center mt-4 custom-hide-show-ul-list">
+  {/* Right Column */}
+  <div className="col-lg-6">
+    <h4 style={{ textAlign: "center", margin: "10px", color: "white" }}>
+      We love listen to your requirements
+    </h4>
+    <div className="aximo-main-form" style={{ backgroundColor: "#FFDDDD" }}>
+      <div style={{ display: "flex" }}>
+        <img
+          src="https://dev.hostcurator.com/wp-content/themes/Hostcurator/theme_assets/images/avatar-img.png"
+          style={{
+            border: "3px solid black",
+            borderRadius: "50%",
+            height: "100px",
+            width: "100px",
+          }}
+        />
+        <h6 style={{ margin: "10px 0 0 10px" }}>Nisamudeen Plackal</h6>
+      </div>
+      <div
+        className="d-flex justify-content-between align-items-center flex-column flex-md-row"
+        style={{ marginTop: "6px" }}
+      >
+        {["Call us", "Skype us", "Mail us"].map((text, index) => (
+          <div
+            key={index}
+            className="stats"
+            style={{
+              border: "2px solid black",
+              borderRadius: "27px",
+              margin: "5px",
+            }}
+          >
+            <button className="btn contact-form-contact-button">{text}</button>
+          </div>
+        ))}
+      </div>
+	  
+    </div>
+	<div class="row justify-content-center mt-4 custom-hide-show-ul-list">
                             <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-8">                           
                                 <div class="container d-flex justify-content-start align-items-center h-100">
                                     <ul class="contact-card-list list-unstyled">
@@ -261,8 +253,9 @@ Solution demo
                                 </div>
                             </div>
                         </div>
-					</div>
-				</div>
+  </div>
+</div>
+
 				</div>
 
 

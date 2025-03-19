@@ -65,7 +65,7 @@ function Testimonialss() {
 					<div className="col-md-7 text-center">
 						<div className="aximo-testimonial-slider-thumb">
 							<img
-								src="https://dev.hostcurator.com/wp-content/themes/Hostcurator/theme_assets/images/ReviewSection.png"
+								src="/images/allimg/ReviewSection.png"
 								alt="img"
 								className="img-fluid"
 								style={{height:'100%'}}
