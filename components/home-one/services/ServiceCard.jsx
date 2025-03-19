@@ -3,11 +3,11 @@ import Link from "next/link";
 import ArrowRightImg from "../../../public/images/icon/arrow-right.svg";
 function ServiceCard({ service: { title, description, icon,color } }) {
 	return (
-		<div className="aximo-iconbox-wrap">
+		<div className="aximo-iconbox-wrap" >
 			{/* <div className="aximo-iconbox-icon">
 				<i className={`${icon}`}></i>
 			</div> */}
-			<div className="aximo-iconbox-data">
+			<div className="aximo-iconbox-data" >
 				<h3 style={{marginBottom:'45px',fontSize:'20px'}}>{title}</h3>
 				<div style={{ 
     position: 'absolute', 
@@ -15,11 +15,11 @@ function ServiceCard({ service: { title, description, icon,color } }) {
     width: '90px', 
     height: '90px', 
     backgroundColor: color, 
-    zIndex: '-1' ,
+    zIndex: '0' ,
 	marginTop:'-45px'
 	
 }}></div> 
-				<p style={{fontSize:'16px',	fontFamily: 'var(--font-syne)',fontWeight:300}}>{description}</p>
+				<p style={{fontSize:'16px',	fontFamily: 'var(--font-syne)',fontWeight:300,zIndex:'2',position:'relative'}}>{description}</p>
 				{/* <Link href="/single-service" className="aximo-icon">
 					<Image src={ArrowRightImg} alt="arrow right" />
 				</Link> */}

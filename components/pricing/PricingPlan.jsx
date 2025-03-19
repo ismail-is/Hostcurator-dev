@@ -94,7 +94,7 @@ function PricingPlan() {
 	}
 
 	return (
-		<div  className="section aximo-section-padding3" style={{backgroundColor:'black'}}>
+		<div  className="section aximo-section-padding3" style={{backgroundColor:'black',marginTop:'-90px'}} >
 
 	
 		<div className="section aximo-section-padding4" style={{backgroundColor:'#FFDEDD',margin:'0 40px 10px 40px',borderRadius:'20px',paddingBottom:'20px'}}>

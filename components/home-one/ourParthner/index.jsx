@@ -15,7 +15,7 @@ const sliderData = [
 
 function OurParthner() {
     return (
-        <div className="container-fluid mb-2" style={{ backgroundColor: '#FFDEDD', borderRadius: '40px' }}>
+        <div className="container-fluid mb-2" style={{ backgroundColor: '#FFDEDD', borderRadius: '40px'}}>
             <div className="row mx-4 px-3 custom-mx-4-screen px-custom-0rem">
                 <div className="container-fluid peach-container-box all-corners-rounded py-5">
                     <div className="row px-5 align-items-center text-center px-custom-0rem">

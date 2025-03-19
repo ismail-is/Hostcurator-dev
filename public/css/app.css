@@ -5016,12 +5016,37 @@ p.aximo-skillbar-lable {
 	}
 }
 
+
+
+  
+ /* Default for Mobile Screens (< 640px) */
+#cards {
+	margin-top: -70px;  /* Mobile screens */
+  }
+  
+  /* Tablets and small desktops (640px and above) */
+  @media screen and (min-width: 640px) {
+	#cards {
+	  margin-top: -135px !important; 
+	}
+  }
+  
+  /* Larger screens (1024px and above) */
+  @media screen and (min-width: 1024px) {
+	#cards {
+	  margin-top: -200px !important; 
+	}
+  }
+  
+  
 .aximo-iconbox-wrap {
 	padding: 10px;
 	border-radius: 20px;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
+	margin-left: -10px;
 	transition: all 0.4s;
 	border: 2px solid var(--heading-color);
+	background-color: white;
 }
 .aximo-iconbox-wrap:hover {
 	background-color: #FFDDDD;

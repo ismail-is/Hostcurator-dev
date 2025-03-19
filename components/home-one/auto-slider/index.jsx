@@ -54,7 +54,7 @@ const swiperSettings = {
 
 function AutoSlider() {
 	return (
-		<div className="aximo-auto-slider-section">
+		<div className="aximo-auto-slider-section" style={{marginTop:'-70px'}}>
 			<div className="swiper aximo-auto-slider">
 				{
 					<Swiper {...swiperSettings}>

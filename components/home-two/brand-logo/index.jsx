@@ -23,7 +23,7 @@ const sliderData = [
 
 function BrandLogo() {
     return (
-        <div className="container-fluid mb-2" style={{ backgroundColor: '#000000', }}>
+        <div className="container-fluid mb-2" style={{ backgroundColor: '#000000', marginTop:'-90px'}}>
             <div className="row mx-4 px-3 custom-mx-4-screen px-custom-0rem">
 				
                 <div className="container-fluid peach-container-box all-corners-rounded py-5">

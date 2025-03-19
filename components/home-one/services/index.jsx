@@ -5,7 +5,7 @@ import ServiceCard from "./ServiceCard";
 
 function Services({ services }) {
 	return (
-		<div className="section aximo-section-padding4">
+		<div className="section aximo-section-padding4" style={{backgroundColor:'black'}} id='cards'>
 			<div className="container">
 				{/* <div className="aximo-section-title center">
 					<h2>
@@ -19,9 +19,9 @@ function Services({ services }) {
 					</h2>
 				</div> */}
 				<div className="aximo-service-wrap">
-  <div className="row">
+  <div className="row" >
     {services.map((item, index) => (
-      <FadeInStagger key={item.id} index={index} className="col-lg-3 d-flex gap-1">
+      <FadeInStagger key={item.id} index={index} className="col-lg-3 d-flex gap-0">
         <ServiceCard service={item} />
       </FadeInStagger>
     ))}
