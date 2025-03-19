@@ -123,7 +123,7 @@ export default function HomeOne() {
 			<Services services={servicesData} />
 			<AutoSlider />
 			<PricingPlan />
-			{/* <ContactForm /> */}
+			<ContactForm />
 			<OurParthner/>
 			<BrandLogo />
 			<Testimonialss/>

@@ -129,26 +129,20 @@ function ContactForm() {
 							<div style={{display:'flex'}}><img src='https://dev.hostcurator.com/wp-content/themes/Hostcurator/theme_assets/images/avatar-img.png' style={{border:'3px solid black',borderRadius:'50%',height:'100px',width:'100px'}}/>
 							<h6 style={{margin:'10px 0 0 10px'}}>Nisamudeen Plackal</h6>
 							</div>
-							<div class="d-flex justify-content-between custom-justify-content-between align-items-center custom-display-block-screen" style={{marginTop:"6px"}}>
-                                                <div class="stats" style={{border:'2px solid black',borderRadius:'27px'}}>
-                                                    <button class="btn contact-form-contact-button" style={{border:'2px black'}}>
-                                                        {/* <img src="hhttps://dev.hostcurator.com/wp-content/themes/Hostcurator/theme_assets/images/social-icons/contact-via-whatsapp.svg" class="contact-via-icons me-2"/>     */}
-                                                        Call us
-                                                    </button>
-                                                </div>
-                                                <div class="stats" style={{border:'2px solid black',borderRadius:'27px'}}>
-                                                    <button class="btn contact-form-contact-button">
-                                                        {/* <img src="https://dev.hostcurator.com/wp-content/themes/Hostcurator/theme_assets/images/social-icons/contact-via-skype.svg" class="contact-via-icons me-2"/>     */}
-                                                        Skype us
-                                                    </button>
-                                                </div>
-                                                <div class="stats" style={{border:'2px solid black',borderRadius:'27px'}}>
-                                                    <button class="btn contact-form-contact-button">
-                                                        {/* <img src="	https://dev.hostcurator.com/wp-content/themes/Hostcurator/theme_assets/images/social-icons/contact-via-email.svg" class="contact-via-icons me-2"/>     */}
-                                                        Mail us
-                                                    </button>
-                                                </div>                                   
-                                            </div>
+							<div
+      className="d-flex justify-content-between align-items-center flex-column flex-md-row"
+      style={{ marginTop: "6px" }}
+    >
+      {["Call us", "Skype us", "Mail us"].map((text, index) => (
+        <div
+          key={index}
+          className="stats"
+          style={{ border: "2px solid black", borderRadius: "27px", margin: "5px" }}
+        >
+          <button className="btn contact-form-contact-button">{text}</button>
+        </div>
+      ))}
+    </div>
 
 										
 							{/* <form onSubmit={handleSubmit(submitForm)}>
