@@ -10372,5 +10372,57 @@ button#aximo-notified-btn {
 	right: 5px;
 }
 
+
+#mainbanner {
+    padding: 40px;
+    border-radius: 29px;
+    font-size: 14px;
+}
+
+@media (min-width: 640px) {
+    #mainbanner {
+        padding: 72px;
+        font-size: 16px;
+    }
+}
+
+#mainbanner1 {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media (min-width: 640px) {
+    #mainbanner1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+}
+
+@media (min-width: 768px) {
+    #mainbanner1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #mainbanner1 {
+        font-size: 45px;
+        line-height: 60px;
+    }
+}
+
+
+
+#mainbanner2 {
+    font-size: 14px; /* Default size */
+}
+
+@media (min-width: 640px) {
+    #mainbanner2 {
+        font-size: 18px;
+    }
+}
+
 /*1.4 themes css*/
 /*# sourceMappingURL=app.css.map */
