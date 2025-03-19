@@ -17,9 +17,7 @@ function Test({ testimonial: { author, designation, title, description, img, col
 						color: 'white', 
 						lineHeight: '50px',
 						/* Responsive Font Size */
-						'@media (min-width: 640px)': { fontSize: '35px', lineHeight: '45px' },  /* sm */
-						'@media (min-width: 768px)': { fontSize: '40px', lineHeight: '50px' },  /* md */
-						'@media (min-width: 1024px)': { fontSize: '45px', lineHeight: '60px' }  /* lg */
+						
 					}}
 				>
 					{title} <img src={star} alt="Rating Stars" />
@@ -64,4 +62,4 @@ function Test({ testimonial: { author, designation, title, description, img, col
 	);
 }
 
-export default Test;
+export default Test;
